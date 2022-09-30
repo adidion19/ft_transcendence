@@ -5,7 +5,7 @@
 <h4>Summary</h4>
 Ft_transcendence is a website where users can play real-time multiplayer Pong. They connect with the OAuth system of 42 intranet and have access to a chat, a leaderboard, a profile page etc...
 
-The website backend is wrote in NestJs and the front in typescript, using React. The database used for this project is PostgreSQL.
+The website is written in TypeScript and is using NestJs framework for the backend and React for the front. The database used for this project is PostgreSQL.
 
 <h4>Installation</h4>
 
@@ -37,17 +37,17 @@ Inspect the database :
 
 <h6>User account</h6>
 
-* The user login using the OAuth System of 42 Intranet.
+* The user can log in using the OAuth System of 42 Intranet.
 
-* In his user page, they can change their name (the default one is the one from the 42Intranet) and picture.
+* In his user page, he can change his name and his picture, set by default to those of 42 Intranet.
 
-* They are able to enable two-factor authentication (Google Authenticator).
+* He is able to enable two-factor authentication (Google Authenticator).
 
-* On their profile page, they can add other users as friends, block other users (This way, they will see no more messages from the account they blocked) or start a direct conversation with them in a private chat room.
+* On his profile page, he can add other users as friend, block other users (this way, he will no longer see the messages from the accounts he blocked), and send direct messages to them in a private chat room.
 
-* They can access stats concerning their match history.
+* He can access stats concerning his match history.
 
-* And finally, their current status is displayed (online, offline, in a game).
+* And finally, his current status is displayed (online, offline, in a game).
 
 ![Screenshot](screenshots_Readme/profile_user.png)
 
@@ -55,20 +55,20 @@ Inspect the database :
 
 <h6>Chat</h6>
 
-* The users arriving to the chat page land in the general room. From that poitn, they can create channels, that can be public or protected by a password.
+* The users arriving to the chat page land in the general room. From that point, they can create channels, that can be public or protected by a password.
 
-* The user who has created a new channel is automatically set as the channel owner until they leave it (in that case the channel is destroyed). The channel owner can set a password required to access the channel, change it, and also remove it. They can set other users as administrators. Channel owners and administrators can ban or mute users for a limited time.
+* The user who created a new channel is automatically set as the channel owner until he leaves it (in this case, the channel will be deleted). The channel owner can set a password required to access the channel, change it, and also remove it. He can set other users as administrators. Channel owners and administrators can ban or mute users for a limited time.
 
-* The users are able to access other players profiles through the chat interface and they can also invite another plyer to a Pong match (invitation that can be accepted or declined).
+* The users are able to access other players profiles through the chat interface and they can also invite another player to a Pong match (the invitation can be accepted or declined).
 
 ![Screenshot](screenshots_Readme/chat.png)
 ![Screenshot](screenshots_Readme/chat_bis.png)
 
 <h6>Game</h6>
 
-* Users can play a live Pong game versus one another. There is a matchmaking system, where the users can join a queue until they get matched with another player.
+* Users can play a live Pong game against each other. There is a matchmaking system, where the users can join a queue until they get matched with another player.
 
-* The users can also watch live games.
+* The users can also watch live games thanks to the spectator mode.
 ![Screenshot](screenshots_Readme/game.png)
 
 <h6>Leaderboard</h6>
